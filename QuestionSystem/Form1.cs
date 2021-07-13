@@ -364,7 +364,7 @@ namespace QuestionSystem
             phase = Phase.Initialize;
             //panelResult.Visible = true;
             // TODO
-            float accuracy = rightAnswerNum / (float)numberSetting;
+            float accuracy = rightAnswerNum * 100f / numberSetting ;
             MessageBox.Show("Finish! Your score is " + accuracy + "% (" + rightAnswerNum + "/" + numberSetting + ").",
                 "Finish!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             panelQuestion.Visible = false;
