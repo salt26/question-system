@@ -5,6 +5,7 @@
 
 *.csv
 *.jpg
+ignore/
 
 # User-specific files
 *.rsuser
