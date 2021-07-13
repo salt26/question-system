@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56AEFC2B-A2C8-4C64-BE2F-BA39DEBEE578}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuestionSystem</RootNamespace>
+    <AssemblyName>QuestionSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Datasets\GrammarExercises\Question.csv" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datasets\GrammarExercises\20210712_123248.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123302.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123402.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123413.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123436.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123525.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123537.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123546.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123556.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123603.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123612.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123619.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123632.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123640.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123648.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123700.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123708.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123716.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123729.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123741.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123750.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123756.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123803.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123814.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123830.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123838.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123848.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123855.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123905.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123911.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123921.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123928.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123934.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123942.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123952.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_123959.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124007.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124013.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124020.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124026.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124031.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124039.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124047.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124054.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124113.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124121.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124128.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124134.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124143.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124155.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124205.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124218.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124229.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124316.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124328.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124338.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124352.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124406.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124509.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124517.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124523.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124532.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124539.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124544.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124645.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124703.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124718.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124735.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124750.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_124806.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125046.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125105.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125120.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125135.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125150.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125203.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125435.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125449.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125503.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125520.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125704.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125726.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125744.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125808.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125836.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125854.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125920.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125938.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_125952.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130011.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130028.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130045.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130100.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130114.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130127.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130141.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130157.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130212.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130220.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130237.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130252.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130305.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130319.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130332.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130350.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130426.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130451.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130510.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130535.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130602.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130610.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130635.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130646.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130722.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130802.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130817.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130833.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130842.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130907.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_130931.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_131326.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_131341.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_131359.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_131504.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_131511.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_131527.jpg" />
+    <Content Include="Datasets\GrammarExercises\20210712_131545.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
